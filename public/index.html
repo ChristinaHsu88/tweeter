@@ -3,31 +3,70 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
-
     <!-- External CSS -->
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,700,700i" rel="stylesheet">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-
-    <!-- External JS -->
-    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
-
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/app.js"></script>
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />  
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    
+    
   </head>
 
   <body>
-
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar">
       <img class="logo" src="/images/bird.png" width="80px" height="80px">
       <span class="header">Tweeter</span>
+      <button class="compose" type="button" id="compose"><i class="fas fa-edit"></i> Compose</button>
     </nav>
-
     <!-- Page-specific (main) content here -->
     <main class="container">
+      <section class="new-tweet">
+          <h2>Compose Tweet</h2>
+          <form action="/tweets/" method="POST" id="form">
+            <textarea name="text" placeholder="What are you humming about?" class="text" id="mytext"></textarea>
+            <input type="submit" value="Tweet" class="button">
+            <span class="counter">140</span>
+            <span class="errorMsg">Please enter a message within 140 words</span>
+          </form>
+        </section>
+        <section id="tweets">
+          <article class="tweet">
+            <header>
+              <img class="pic" src="/images/cat.png">
+              <span class="name">Tommy</span>
+              <span class="hashtag">@tommy</span>
+            </header>
+            <p class="tweets">this is where people say stuff</p>
+            <footer>
+              <span class="footer">this is the footer section</span>
+              <span class="emoji"> ♡ ⇄ ⚑ </span>
+            </footer>
+          </article>
+          <!-- <article class="tweet">
+              <header>
+                <img class="pic" src="/images/cat.png">
+                <span class="name">Tommy</span>
+                <span class="hashtag">@tommy</span>
+              </header>
+              <p class="tweets">this is where people say stuff</p>
+              <footer>
+                  <span class="footer">this is the footer section</span>
+                  <span class="emoji"> ♡ ⇄ ⚑ </span>
+              </footer>
+            </article> -->
+        </section>
     </main>
-
+    <!--External JS-->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!-- <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="moment.js"></script>
+    <script type="text/javascript" src="livestamp.js"></script> -->
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/app.js"></script>
   </body>
 </html>

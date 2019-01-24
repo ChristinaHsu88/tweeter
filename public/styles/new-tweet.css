@@ -1,0 +1,60 @@
+.new-tweet {
+    border: solid;
+    border-color: lightgray;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background:lightgray;
+    height: 160px;
+}
+
+.new-tweet .errorMsg {
+    color: red;
+}
+
+h2 {
+    text-align: left;
+    padding-left: 10px;
+    border-bottom: solid;
+    padding-right: 10px;
+}
+
+textarea{
+    text-align: left;
+    width: 380px;
+}
+
+input.button {
+    float: left;
+    margin-left: 13px;
+}
+
+span.counter {
+    float:right;
+    padding-right: 18px;
+}
+
+span.emoji {
+    float:right;
+    padding-right: 18px;
+}
+.tweet{
+    height: 160px;
+    width: 410px;
+    border: 2px solid lightgray;
+    margin: auto;
+    border-radius:10px;
+    overflow:hidden;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.tweet:last-child {
+    margin-bottom: 0px;
+}
+
+.tweet:hover {
+    border-color: black;
+    color: black;
+    opacity: 1;
+
+}

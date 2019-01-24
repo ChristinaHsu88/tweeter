@@ -18,6 +18,63 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+main.container {
+  width: 450px;
+  text-align: center;
+  background: white;
+  margin: auto;
+  padding: 20px;
+}
+
+p {
+  margin:0;
+}
+
+
+
+header {
+  height: 50px;
+  text-align: left;
+  padding-top: 8px;
+  background: lightgray;
+  padding-left:10px;
+}
+
+header .pic {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  float: left;
+}
+header .name {
+  padding-left: 10px;
+  font-size: larger;
+  font-weight: bold;
+  color:gray;
+}
+
+header .hashtag {
+  float: right;
+  padding-right: 8px;
+}
+
+p.tweets {
+  height: 80px;
+  border-bottom: solid;
+  border-color:lightgray;
+  text-align: left;
+  padding-left:10px;
+  padding-top: 5px;
+}
+footer {
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: small;
 }
 
 /*
