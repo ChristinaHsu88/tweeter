@@ -14,17 +14,6 @@ $("#compose").click(function() {
     document.getElementById('mytext').select();
 })
 
-//testing the clicking -> working on here
-var click = 0;
-$("#tweets").on("click", ".like", function(event) {
-    $(".like").replaceWith(`<button class="like"> ♥`); //how to target the user
-    click += 1;
-    console.log(click);
-    // return click;
-})
-
-
-
 //update the tweets with new ones
 const allTweet = $(".tweets");
 function loadTweets() {
