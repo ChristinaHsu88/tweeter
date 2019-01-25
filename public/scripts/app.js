@@ -14,9 +14,19 @@ $("#compose").click(function() {
     document.getElementById('mytext').select();
 })
 
+//testing the clicking -> working on here
+var click = 0;
+$("#tweets").on("click", ".like", function(event) {
+    $(".like").replaceWith(`<button class="like"> ♥`); //how to target the user
+    click += 1;
+    console.log(click);
+    // return click;
+})
+
+
+
 //update the tweets with new ones
 const allTweet = $(".tweets");
-var updatedTweets;
 function loadTweets() {
     $.ajax({
         method: "GET",
@@ -62,18 +72,23 @@ function createTweetElement(littleBird) {
     let $hashtagSpan = $('<span class="hashtag">').text(littleBird.user.handle);
     let $p = $('<p class="tweets">').text(littleBird.content.text);
     let $footer = $('<footer>');
-    let $footerSpan = $('<span class="footer">').text(littleBird.created_at);
-    let $footerEmo = $('<span class="emoji">').text("♡ ⇄ ⚑");
+    //let $footerSpan = $('<span class="footer">').text(littleBird.created_at);
+    $footerSpan = $(`<span data-livestamp="${littleBird.created_at / 1000}">`)
+    let $footerLike = $('<button class="like">').text("♡");
+    let $footerMov = $('<span class="direct">').text("⇄");
+    let $footerflag = $('<span class="flag">').text("⚑");
     $header.append($picture);
     $header.append($nameSpan);
     $header.append($hashtagSpan);
     $article.append($header);
     $article.append($p);
     $footer.append($footerSpan);
-    $footer.append($footerEmo);
+    $footer.append($footerflag);
+    $footer.append($footerMov);
+    $footer.append($footerLike);
     $article.append($footer);
 
-        return $article;
+    return $article;
 }
 
 //rendering tweet with callback
