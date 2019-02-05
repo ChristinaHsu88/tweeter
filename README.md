@@ -18,5 +18,5 @@ This repository is the starter code for the project: Students will fork and clon
 
 ##Screenshots
 
-!["Screenshot of tweet compose box"] (https://github.com/ChristinaHsu88/tweeter/blob/master/docs/tweeter%20demo.png)
+!["Screenshot of tweet compose box"](https://github.com/ChristinaHsu88/tweeter/blob/master/docs/tweeter%20demo.png)
 !["Screenshot of tweet without compose box"](https://github.com/ChristinaHsu88/tweeter/blob/master/docs/tweeter%20browsing.png)
