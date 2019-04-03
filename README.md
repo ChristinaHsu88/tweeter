@@ -1,6 +1,11 @@
 # TWEETER
 Tweeter is a simple, single-page Twitter clone building with HTML, CSS, JS, jQuery and AJAX, along with Node, Express and MongoDB back-end technologies.
 
+## FUNCTIONALITIES
+* Primarily a client-side Single Page App (SPA)
+* The client-side app communicates with a server via AJAX
+* Tweets are persisted to MongoDB and survive server restart
+
 ## GETTING STARTED
 1. Clone this repository by running `git clone git@github.com:ChristinaHsu88/tweeter.git` command.
 2. Install dependencies using the `npm install` command.
