@@ -7,6 +7,8 @@ Tweeter is a simple, single-page Twitter clone building with HTML, CSS, JS, jQue
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
+** Note: Please run `Mongod` command on a separate tab if connection to MongoDB fails. 
+
 ## TECH STACK
 * Javascript
 * Ajax
